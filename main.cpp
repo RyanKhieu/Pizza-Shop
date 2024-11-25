@@ -1,5 +1,10 @@
+// Name: Ryan Khieu
+// Program Name: Pizza Shop
+// Date: 11/25/2024
+// Extra: Medium Size
 #include <iostream>
 
+// Variables
 bool order = true;
 int opt;
 int large;
@@ -9,6 +14,7 @@ int toppings;
 void calc(int a);
 void checkout();
 
+// Main fuction
 int main() {
     std::cout << "Welcome to the Rizztorante Pizzeria!" << std::endl;
     std::cout << "Large Pizza: $18.00" << std::endl;
@@ -17,6 +23,7 @@ int main() {
     std::cout << "Toppings: $1.00" << std::endl;
     std::cout << std::endl;
     while (order) {
+        // User input
         std::cout << "What would you like to order?" << std::endl;
         std::cout << "1. Large Pizza" << std::endl;
         std::cout << "2. Medium Pizza" << std::endl;
@@ -30,6 +37,7 @@ int main() {
     return 0;
 }
 
+// Count the number of pizzas and toppings
 void calc(int a) {
     switch (a) {
         case 1:
@@ -54,6 +62,7 @@ void calc(int a) {
     }
 }
 
+// Calculate the total price
 void checkout() {
     std::cout << std::endl;
     std::cout << "You have ordered: " << std::endl;
